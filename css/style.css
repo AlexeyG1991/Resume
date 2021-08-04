@@ -288,7 +288,7 @@ h3::after {
   color: #4b4b4d;
   margin-top: 15px;
   padding: 0 5px;
-  border: 1px solid #4b4b4d;
+  border: 2px solid #4b4b4d;
   border-radius: 15%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
