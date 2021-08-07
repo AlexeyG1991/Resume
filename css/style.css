@@ -280,22 +280,27 @@ h3::after {
 .wrapper .resume-main__header label[for=lang] {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-transform: uppercase;
   -webkit-user-select: none;
-     -moz-user-select: none;
+      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
-  color: #4b4b4d;
-  margin-top: 15px;
-  padding: 0 5px;
-  border: 2px solid #4b4b4d;
+  color: #c4cfe5;
+  margin-top: 17px;
+  padding: 5px 10px;
   border-radius: 15%;
+  background-color: #263440;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  border: 2px solid #263440;
 }
 .wrapper .resume-main__header label[for=lang]:hover {
-  background-color: #4b4b4d;
-  color: #c4cfe5;
+  background-color: #c4cfe5;
+  color: #263440;
+  border: 2px solid #263440;
+  -webkit-box-shadow: 0 1px 5px 1px #263440;
+          box-shadow: 0 1px 5px 1px #263440;
 }
 .wrapper .resume-main__header-label {
   position: relative;
