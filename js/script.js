@@ -35,10 +35,10 @@ let eng = {
     examples: 'Work examples',
     // --------------------------------------
     skills: 'Hard skills',
-    skills_one: 'Adaptive layout',
+    skills_one: 'Adaptive layout.',
     skills_two: 'Neat, readable, well thought-out code.',
     education: 'Education',
-    education_info: '(2009-2014) KSUFTT <br>Specialty: enterprise economics (specialist)',
+    education_info: 'KSUFTT (2009-2014) <br>Specialty: enterprise economics (specialist)',
     lаnguage: 'Lаnguages',
     lаnguage_ua: 'Ukrainian<span></span>Native',
     lаnguage_ru: 'Russian<span></span>Fluently',
