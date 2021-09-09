@@ -81,6 +81,10 @@ h3::after {
   background-color: #4b4b4d;
 }
 
+.text_mb {
+  margin-bottom: 20px;
+}
+
 .text {
   padding-bottom: 20px;
   border-bottom: 1px solid #596164;
@@ -282,7 +286,7 @@ h3::after {
       align-self: flex-end;
   text-transform: uppercase;
   -webkit-user-select: none;
-      -moz-user-select: none;
+     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
