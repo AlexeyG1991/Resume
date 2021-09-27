@@ -309,6 +309,7 @@ h3 {
                 &-work {
                     display: flex;
                     justify-content: space-around;
+                    align-items: center;
                     flex-wrap: wrap;
                     a {
                         height: 100px;
@@ -316,7 +317,7 @@ h3 {
                         border-radius: 5%;
                         box-shadow: 0 5px 10px 1px rgba(221, 221, 221, 1);
                         transition: all 0.4s ease 0s;
-                        margin-bottom: 20px;
+                        margin-bottom: 25px;
                         background-size: cover;
                         @media (max-width: $md) {
                             margin: 0 10px 20px;
@@ -338,6 +339,9 @@ h3 {
                     }
                     &_income {
                         background: url(../img/small-4.png) 50% no-repeat;
+                    }
+                    &_indesit-form {
+                        background: url(../img/small-5.png) 50% no-repeat;
                     }
                 }
             }
