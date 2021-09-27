@@ -403,6 +403,9 @@ h3::after {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -414,7 +417,7 @@ h3::after {
           box-shadow: 0 5px 10px 1px #dddddd;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   background-size: cover;
 }
 @media (max-width: 768px) {
@@ -440,6 +443,9 @@ h3::after {
 }
 .wrapper .resume-main__examples-work_income {
   background: url(../img/small-4.png) 50% no-repeat;
+}
+.wrapper .resume-main__examples-work_indesit-form {
+  background: url(../img/small-5.png) 50% no-repeat;
 }
 .wrapper .popup {
   position: fixed;
