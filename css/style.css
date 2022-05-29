@@ -480,7 +480,7 @@ h3::after {
   -webkit-transform: rotate(105deg);
           transform: rotate(105deg);
   bottom: -5%;
-  left: 33%;
+  left: 38%;
   height: 300px;
 }
 @media (max-width: 768px) {
@@ -544,8 +544,12 @@ h3::after {
   position: absolute;
   right: 10px;
   top: 10px;
-  font-size: 20px;
-  color: #000;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.wrapper .popup__body_content-close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .wrapper .popup__body_content-image img {
   max-width: 100%;

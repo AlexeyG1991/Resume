@@ -473,7 +473,7 @@ h3 {
                 position: absolute;
                 transform: rotate(105deg);
                 bottom: -5%;
-                left: 33%;
+                left: 38%;
                 height: 300px;
 
                 @media (max-width: $md) {
@@ -532,8 +532,11 @@ h3 {
                     position: absolute;
                     right: 10px;
                     top: 10px;
-                    font-size: 20px;
-                    color: #000;
+                    transition: all 0.3s ease 0s;
+                }
+
+                &-close:hover {
+                    transform: rotate(90deg);
                 }
 
                 &-image {
