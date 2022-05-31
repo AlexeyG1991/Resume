@@ -193,9 +193,9 @@ h3::after {
   border-radius: 50%;
   border: none;
   padding: 0;
-  background: #00e5ff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #00e5ff), color-stop(51%, yellow));
-  background: linear-gradient(to bottom, #00e5ff 50%, yellow 51%);
+  background: rgb(0, 229, 255);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(0, 229, 255)), color-stop(51%, rgb(255, 255, 0)));
+  background: linear-gradient(to bottom, rgb(0, 229, 255) 50%, rgb(255, 255, 0) 51%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e5ff", endColorstr="#ffff00", GradientType=0);
 }
 @media (max-width: 768px) {
@@ -441,8 +441,8 @@ h3::after {
   height: 100px;
   width: 30%;
   border-radius: 5%;
-  -webkit-box-shadow: 0 5px 10px 1px #dddddd;
-          box-shadow: 0 5px 10px 1px #dddddd;
+  -webkit-box-shadow: 0 5px 10px 1px rgb(221, 221, 221);
+          box-shadow: 0 5px 10px 1px rgb(221, 221, 221);
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   margin-bottom: 25px;
@@ -459,6 +459,9 @@ h3::after {
           transform: scale(0.9);
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.wrapper .resume-main__examples-work_tattoo {
+  background: url(../img/small-0.png) 50% no-repeat;
 }
 .wrapper .resume-main__examples-work_bouncy {
   background: url(../img/small-1.png) 50% no-repeat;
