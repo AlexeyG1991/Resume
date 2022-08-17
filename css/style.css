@@ -306,7 +306,7 @@ h3::after {
 .wrapper .resume-main__header #lang {
   display: none;
 }
-.wrapper .resume-main__header #lang:checked ~ .ru, .wrapper .resume-main__header #lang:not(:checked) ~ .eng {
+.wrapper .resume-main__header #lang:checked ~ .ua, .wrapper .resume-main__header #lang:not(:checked) ~ .eng {
   display: none;
 }
 .wrapper .resume-main__header label[for=lang] {
