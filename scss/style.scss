@@ -302,7 +302,7 @@ h3 {
                 #lang {
                     display: none;
 
-                    &:checked~.ru,
+                    &:checked~.ua,
                     &:not(:checked)~.eng {
                         display: none;
                     }
