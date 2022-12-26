@@ -421,8 +421,6 @@ h3 {
             }
 
             &__examples {
-                padding-bottom: 120px;
-                
                 &-work {
                     display: flex;
                     justify-content: space-around;
@@ -471,10 +469,6 @@ h3 {
 
                     &_indesit-form {
                         background: url(../img/small-5.png) 50% no-repeat;
-                    }
-
-                    &_shop_grape {
-                        background: url(../img/small-6.png) 50% no-repeat;
                     }
                 }
             }
