@@ -425,6 +425,9 @@ h3::after {
       -ms-flex: 1;
           flex: 1;
 }
+.wrapper .resume-main__examples {
+  padding-bottom: 120px;
+}
 .wrapper .resume-main__examples-work {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,6 +480,9 @@ h3::after {
 }
 .wrapper .resume-main__examples-work_indesit-form {
   background: url(../img/small-5.png) 50% no-repeat;
+}
+.wrapper .resume-main__examples-work_shop_grape {
+  background: url(../img/small-6.png) 50% no-repeat;
 }
 .wrapper .resume-main__image {
   position: absolute;
