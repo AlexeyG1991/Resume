@@ -302,8 +302,8 @@ h3 {
                 #lang {
                     display: none;
 
-                    &:checked~.ua,
-                    &:not(:checked)~.eng {
+                    &:checked~.eng,
+                    &:not(:checked)~.ua {
                         display: none;
                     }
                 }
@@ -421,7 +421,9 @@ h3 {
             }
 
             &__examples {
-                padding-bottom: 120px;
+                @media (min-width: $md) {
+                    padding-bottom: 120px;
+                }
                 
                 &-work {
                     display: flex;

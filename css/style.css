@@ -306,7 +306,7 @@ h3::after {
 .wrapper .resume-main__header #lang {
   display: none;
 }
-.wrapper .resume-main__header #lang:checked ~ .ua, .wrapper .resume-main__header #lang:not(:checked) ~ .eng {
+.wrapper .resume-main__header #lang:checked ~ .eng, .wrapper .resume-main__header #lang:not(:checked) ~ .ua {
   display: none;
 }
 .wrapper .resume-main__header label[for=lang] {
@@ -425,8 +425,10 @@ h3::after {
       -ms-flex: 1;
           flex: 1;
 }
-.wrapper .resume-main__examples {
-  padding-bottom: 120px;
+@media (min-width: 768px) {
+  .wrapper .resume-main__examples {
+    padding-bottom: 120px;
+  }
 }
 .wrapper .resume-main__examples-work {
   display: -webkit-box;
