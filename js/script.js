@@ -20,7 +20,7 @@ let ua = {
     lаnguage: 'Мова',
     lаnguage_ua: 'Українська<span></span>Pідна',
     lаnguage_ru: 'Російська<span></span>Вільно',
-    lаnguage_en: 'Англійська<span></span>Ниже среднего',
+    lаnguage_en: 'Англійська<span></span>Нижче середнього',
     contact: 'Контакти',
 };
 
