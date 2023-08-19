@@ -108,20 +108,37 @@ h3::after {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   height: auto;
   padding: 30px 10px;
-  background-color: #a8a8a8;
+  background-image: url("../img/bg-resume.jpg");
+  background-size: 280px;
+  background-attachment: fixed;
   overflow: hidden;
 }
+.wrapper::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 0;
+}
 .wrapper .resume {
+  position: relative;
   max-width: 1280px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  border: 1px solid #fff;
 }
 @media (max-width: 768px) {
   .wrapper .resume {
@@ -193,15 +210,19 @@ h3::after {
   border-radius: 50%;
   border: none;
   padding: 0;
-  background: rgb(0, 229, 255);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(0, 229, 255)), color-stop(51%, rgb(255, 255, 0)));
-  background: linear-gradient(to bottom, rgb(0, 229, 255) 50%, rgb(255, 255, 0) 51%);
+  background: rgb(0, 174, 255);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(0, 174, 255)), color-stop(51%, rgb(255, 255, 0)));
+  background: linear-gradient(to bottom, rgb(0, 174, 255) 50%, rgb(255, 255, 0) 51%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00e5ff", endColorstr="#ffff00", GradientType=0);
 }
 @media (max-width: 768px) {
   .wrapper .resume-info__img {
     display: none;
   }
+}
+.wrapper .resume-info__img:hover .resume-info__img_link {
+  width: 210px;
+  height: 210px;
 }
 .wrapper .resume-info__img_link {
   position: absolute;
@@ -214,6 +235,8 @@ h3::after {
   height: 215px;
   background: url(../img/1.jpg) 45% no-repeat;
   background-size: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .wrapper .resume-info__skills ul > * {
   position: relative;
@@ -268,6 +291,7 @@ h3::after {
   margin-right: 10px;
 }
 .wrapper .resume-info__contact-link a img {
+  max-width: 32px;
   margin-right: 15px;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -312,6 +336,7 @@ h3::after {
 .wrapper .resume-main__header label[for=lang] {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-align: center;
   text-transform: uppercase;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -319,6 +344,7 @@ h3::after {
           user-select: none;
   cursor: pointer;
   color: #c4cfe5;
+  min-width: 60px;
   margin-top: 17px;
   padding: 5px 10px;
   border-radius: 15%;
@@ -328,6 +354,12 @@ h3::after {
   border: 2px solid #263440;
 }
 .wrapper .resume-main__header label[for=lang]:hover {
+  background-color: #374c5e;
+  border: 2px solid #374c5e;
+  -webkit-box-shadow: 0 1px 5px 1px #374c5e;
+          box-shadow: 0 1px 5px 1px #374c5e;
+}
+.wrapper .resume-main__header label[for=lang]:active {
   background-color: #c4cfe5;
   color: #263440;
   border: 2px solid #263440;
@@ -512,6 +544,7 @@ h3::after {
   overflow-x: hidden;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
+  z-index: 2;
 }
 .wrapper .popup:target {
   opacity: 1;
